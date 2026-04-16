@@ -356,12 +356,6 @@ with tabs[1]:
 # ─────────────────────────────────────────────────────────────────────────────
 with tabs[2]:
     st.subheader("Temporal generalization: train on November → test on December")
-    st.markdown(
-        "The standard 85/15 random split **leaks future data into training** "
-        "when the dataset has a time dimension. Temporal validation (train=Nov, test=Dec) "
-        "tests whether the model generalizes to unseen time periods — a stricter and "
-        "more realistic evaluation."
-    )
 
     if time_metrics:
         rows_t = []
